@@ -1,0 +1,2632 @@
+table {
+    empty-cells: show;
+}
+.borde_rlb_th {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    vertical-align: top;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+.borde_rlb_th_avisos {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+.borde_rlb_th_avisos_cab {
+    border-right: solid 1px #4F86D9;
+    border-left: solid 1px #4F86D9;
+    border-bottom: solid 1px #4F86D9;
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+.borde_rlb_th2 {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+.borde_rlb_th_center {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    vertical-align: top;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 5px;
+}
+.borde_rb_th {
+    border-right: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    vertical-align: top;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+.borde_b {
+    border-bottom: solid 1px #95B6E8;
+    text-align: center;
+}
+.borde_r {
+    border-right: solid 1px #95B6E8;
+}
+.borde_l {
+    border-left: solid 1px #95B6E8;
+}
+.borde_rb {
+    border-right: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    text-align: center;
+}
+.borde_rb_cab {
+    border-right: solid 1px #4F86D9;
+    border-bottom: solid 1px #4F86D9;
+    text-align: center;
+}
+.borde_rlb {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    text-align: left;
+}
+.borde_rb_left {
+    border-right: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    text-align: left;
+}
+.borde_rb_right {
+    border-right: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    text-align: right;
+}
+.borde_t_cab {
+    border-top: solid 1px #4F86D9;
+}
+.raduv_pred_nivel1 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c1_pred.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_pred_nivel2 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c2_pred.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_pred_nivel3 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c3_pred.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_pred_nivel4 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c4_pred.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_pred_nivel5 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c5_pred.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel1 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c1.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel2 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c2.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel3 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c3.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel4 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c4.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel5 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c5.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel6 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c6.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel7 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c7.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel8 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c8.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel9 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c9.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel10 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c10.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+.raduv_nivel11 {
+    background-image: url(http://www.aemet.es/imagenes/gif/radiacionuv/uvi_c11.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 24px;
+}
+
+.texto_rojo {
+    color: #BE3724;
+}
+.texto_azul {
+    color: #345A8E;
+}
+
+.tabla_datos {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    border: 0;
+    width: 777px;
+    padding: 0;
+    vertical-align: top;
+    margin-bottom: 0;
+    margin-top: 0;
+    empty-cells: show;
+}
+.tabla_datos tfoot {
+    color: #4F86D8;
+}
+.tabla_datos a:link {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+}
+.tabla_datos a:link:hover {
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+}
+.tabla_datos a:visited {
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+}
+.tabla_datos a:visited:hover {
+    padding-right: 7px;
+    color: #000;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+}
+.tabla_datos_imagen_enlace a:link {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    display: block;
+    background-image: none;
+}
+.tabla_datos_imagen_enlace a:link:hover {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    display: block;
+    background-image: none;
+}
+.tabla_datos_imagen_enlace a:visited {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    display: block;
+    background-image: none;
+}
+.tabla_datos_imagen_enlace a:visited:hover {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    display: block;
+    background-image: none;
+}
+.tabla_datos td {
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.tabla_datos_sinpadd {
+    color: #000;
+    font-weight: normal;
+    border: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.tabla_datos_sinpadd td {
+    padding: 0;
+    vertical-align: top;
+}
+.cabecera_niv1 th {
+    background-color: #4F86D9;
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.cabecera_niv1_mid th {
+    background-color: #4F86D9;
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.cabecera_niv1_bottom th {
+    background-color: #4F86D9;
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+.cabecera_celda {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: bottom;
+}
+.cabecera_celda_center {
+    font-weight: bold;
+    text-align: center;
+}
+.cabecera_niv2 th {
+    background-color: #95B6E9;
+    font-weight: normal;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+}
+.cabecera_niv2_in {
+    background-color: #95B6E9;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+}
+.titulo_fondo_azul {
+    font-size: 1.00em;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #4F86D9;
+    text-align: left;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 0;
+    padding-bottom: 1px;
+    margin: 0;
+}
+.enlace_fondo_azul {
+    color: #FFF;
+    font-weight: bold;
+    font-style: normal;
+}
+.texto_animacion {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 0;
+    margin: 0;
+}
+.contenedor_flechas {
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 4px;
+    float: left;
+    width: 100%;
+}
+.flecha {
+    background-image: url(http://www.aemet.es/imagenes/gif/hora_radar.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    float: left;
+    height: 4px;
+}
+.contenedor_botones {
+    float: left;
+    font-size: .90em;
+    color: #4F86D8;
+    font-weight: normal;
+    padding-left: 10px;
+    width: 100%;
+}
+.contenedor_botones_reduc {
+    float: left;
+    font-size: .80em;
+    color: #4F86D8;
+    font-weight: normal;
+    padding-left: 10px;
+    width: 100%;
+}
+.boton {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 2px;
+    padding: 0;
+    text-align: center;
+    border: 2px solid;
+    border-color: #E9F1FD;
+    float: left;
+}
+.boton_ancho {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 2px;
+    padding: 0;
+    text-align: center;
+    border: 2px solid;
+    border-color: #E9F1FD;
+}
+.boton_ancho a {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+.contenedor_botones a {
+    text-decoration: none;
+    color: #4F86D8;
+    display: block;
+    width: 100%;
+}
+.contenedor_botones ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contenedor_botones li {
+    padding: 0;
+    margin: 0;
+    height: 12px;
+    text-align: center;
+}
+.contenedor_botones_reduc a {
+    text-decoration: none;
+    color: #4F86D8;
+    display: block;
+    width: 100%;
+}
+.contenedor_botones_reduc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contenedor_botones_reduc li {
+    padding: 0;
+    margin: 0;
+    height: 12px;
+    text-align: center;
+}
+.controles_animacion {
+    position: relative;
+    float: left;
+    padding-left: 107px;
+    margin-top: 5px;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+.contorno_borde {
+    border: 1px solid #779FD6;
+    margin: 0 auto;
+    padding: 0;
+    width: 567px;
+}
+.titulo_imagen {
+    font-size: .90em;
+    color: #345A8E;
+    font-weight: bolder;
+    text-align: left;
+    font-style: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    height: 15px;
+}
+.enlace_lupa {
+    text-align: right;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    height: 15px;
+}
+.enlace_lupa img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F8FE;
+}
+.enlace_lupa a {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.imagen_central {
+    padding-top: 0;
+}
+.imagen_p4 {
+    padding-top: 4px;
+}
+.txt_celda {
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.txt_celda_cab {
+    font-weight: bold;
+    float: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 0;
+}
+.avisos_boletin {
+    vertical-align: middle;
+    text-align: center;
+}
+.avisos_boletin a {
+    color: #BE3724;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+.avisos_boletin a:hover {
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_naranja.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: normal;
+    color: #FF9000;
+}
+.avisos_elementos {
+    margin-left: 5px;
+}
+.texto_entradilla {
+    font-size: 1.00em;
+    color: #345A8E;
+    font-weight: bolder;
+    text-align: left;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.texto_entradilla p {
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+}
+.texto_comentario_dmm {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    padding-left: 15px;
+}
+.texto_comentario_dmm p {
+    text-indent: 0;
+}
+.texto_cabecera {
+    font-size: 1.00em;
+    color: #345A8E;
+    font-weight: bolder;
+    text-align: left;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.texto_cabecera p {
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.texto_pie_widget {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    font-size: 8px!important;
+}
+.texto_pie_widget:hover {
+    background-color: #F4F8FE;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+}
+.texto_normal {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    width: 777px;
+}
+.texto_normal p {
+    text-indent: 0;
+    padding-bottom: 15px;
+}
+.texto_normal a:link {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_pie_widget a:link {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+.texto_normal a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_pie_widget a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+.texto_normal a:link:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #B00640;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_pie_widget a:link:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #B00640;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+.texto_normal a:visited:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #000;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_pie_widget a:visited:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #000;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+.texto_normal2 {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 0;
+    margin: 0;
+}
+.texto_normal_pre {
+    font-size: 1.25em;
+}
+.texto_normal_sinimg {
+    width: 757px;
+}
+.texto_normal_sinimg a:link {
+    background-image: none;
+    padding-right: 0;
+}
+.texto_normal_sinimg a:link:hover {
+    background-image: none;
+    padding-right: 0;
+}
+.texto_normal_sinimg a:visited {
+    background-image: none;
+    padding-right: 0;
+}
+.texto_normal_sinimg a:visited:hover {
+    background-image: none;
+    padding-right: 0;
+}
+.texto_normal ul {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style-type: none;
+    width: 767px;
+}
+.texto_normal ul li {
+    background-image: url(http://www.aemet.es/imagenes/gif/punto_rojo_9x13.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 5px;
+    text-indent: 0;
+    padding-left: 10px;
+    width: 757px;
+}
+.texto_normal ol li {
+    background-image: none;
+    margin-bottom: 5px;
+    text-indent: 0;
+    width: 757px;
+}
+.texto_normal_conf p {
+    text-indent: 0;
+    padding-bottom: 15px;
+}
+.texto_normal_conf a:link {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_normal_conf a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_normal_conf a:link:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #B00640;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_normal_conf a:visited:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #000;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.texto_normal_conf ul {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style-type: none;
+    width: 767px;
+}
+.texto_normal_conf ul li {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 5px;
+    text-indent: 0;
+    padding-left: 10px;
+    width: 757px;
+}
+.texto_normal_conf ul li ul li {
+    background-image: url(http://www.aemet.es/imagenes/gif/punto_rojo_9x13.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 5px;
+    text-indent: 0;
+    padding-left: 10px;
+    width: 757px;
+}
+.texto_normal_niv2 {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-indent: 0;
+}
+.texto_normal_indice li {
+    float: left;
+    padding-bottom: 15px;
+}
+.texto_normal_indice_corto li {
+    float: left;
+    padding-bottom: 0;
+}
+.texto_normal_indice_dmm li {
+    float: left;
+    padding-bottom: 15px;
+    background: none;
+}
+.texto_normal_indice p {
+    padding-bottom: 0;
+}
+.texto_portada {
+    position: relative;
+    font-size: 1.00em;
+    font-weight: normal;
+    clear: right;
+    margin-top: 0;
+}
+.texto_portada p {
+    padding-top: 5px;
+}
+.texto_portada a:link {
+    color: #000;
+}
+.texto_portada a:link:hover {
+    color: #757575;
+}
+.texto_portada a:visited {
+    color: #757575;
+}
+.texto_portada a:visited:hover {
+    color: #000;
+}
+.texto_portada img {
+    border: solid 1px #A3A3A3;
+    margin-top: 5px;
+}
+.img_portada_1 {
+    height: 112.87px;
+    width: 170px;
+    -ms-interpolation-mode: bicubic;
+}
+.img_portada_2 {
+    width: 74px;
+    height: 48px;
+}
+.noticias {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    padding-bottom: 0;
+    padding-left: 2px;
+    width: 437px;
+}
+.img_list_noticias {
+    width: 74px;
+    margin: 5px;
+    text-align: left;
+    float: left;
+    border: 1px solid #CCC;
+}
+.clear_both {
+    clear: both;
+}
+.localidades td {
+    text-decoration: none;
+    text-align: left;
+    vertical-align: middle;
+    font-style: normal;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-image: url(http://www.aemet.es/imagenes/gif/punto_rojo.gif);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 12px;
+}
+.localidades a:link {
+    background-image: none;
+    color: #345A8E;
+}
+.localidades a:link:hover {
+    background-image: none;
+    color: #757575;
+}
+.localidades a:visited {
+    background-image: none;
+    color: #757575;
+}
+.localidades a:visited:hover {
+    background-image: none;
+    color: #000;
+}
+.cabecera_niv3 th {
+    color: #4F86D8;
+    border: 1px solid #4F86D8;
+    font-weight: normal;
+    text-align: center;
+    padding: 1px;
+}
+.tabla_dia {
+    color: #4F86D8;
+    text-align: center;
+    background-color: #E9F1FD;
+    padding: 1px;
+    width: 15px;
+    float: left;
+    border: 1px solid #FFF;
+}
+.tabla_leyenda {
+    font-size: .80em;
+    text-align: left;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+.tabla_leyenda thead {
+    color: #4F86D8;
+    border-bottom: 1px solid;
+    padding: 0;
+}
+.tabla_leyenda th {
+    padding: 2px;
+    font-weight: normal;
+}
+.tabla_leyenda td {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+}
+.menu_cabecera {
+    font-size: .55em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 5px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    float: right;
+    width: 450px;
+}
+.menu_cabecera ul {
+    margin: 0;
+    padding: 0;
+}
+.menu_cabecera li {
+    padding: 0;
+    margin: 0;
+    margin-right: 1px;
+    list-style-type: none;
+    display: inline;
+}
+.menu_cabecera a {
+    color: #FFF;
+    text-decoration: none;
+}
+.menu_cabecera a:hover {
+    color: #000;
+    background-color: #FFF;
+}
+.cabecera {
+    width: 1000px;
+    height: 80px;
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_error.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.cabecera_primavera {
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_primavera.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 346px;
+}
+.cabecera_verano {
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_verano.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 346px;
+}
+.cabecera_otonho {
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_otono.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 346px;
+}
+.cabecera_invierno {
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_invierno.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 346px;
+}
+.contenedor {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.contenido_izq {
+    width: 164px;
+    text-align: left;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.contenido_dch {
+    width: 814px;
+    margin: 0 auto;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+}
+.fondo {
+    float: left;
+    width: 998px;
+    border-left: 1px solid #4F86D8;
+    border-right: 1px solid #BCCBE0;
+    border-top: 1px solid #BCCBE0;
+    border-bottom: 1px solid #BCCBE0;
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: #FFF;
+    height: auto;
+    position: relative;
+    background-image: url("http://www.aemet.es/imagenes/jpg/fondocuerpo.jpg");
+    background-repeat: repeat-y;
+}
+.logo {
+    float: left;
+    margin-top: 13px;
+}
+.logo img {
+    border: 0;
+}
+.literal_buscador {
+    float: right;
+    width: 50px;
+    vertical-align: top;
+    margin-top: 1px;
+    margin-right: 3px;
+}
+.barra_separadora {
+    color: #4F86D8;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.contenido_izq_bajo {
+    border-top: solid 1px;
+    border-color: #4F86D8;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+.contenido_izq_arriba {
+    border-bottom: 1px solid;
+    border-bottom-color: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cuadro {
+    background-color: #D5E7FF;
+    border: 1px solid #4C7FC8;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.cuadro_enlaces {
+    font-size: .70em;
+    color: #4F86D8;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+.cuadro_enlaces li {
+    background-image: none;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    background-color: #FFF;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    line-height: 18px;
+    border-bottom: 0;
+    vertical-align: middle;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    cursor: pointer;
+    height: 22px;
+}
+.cuadro_enlaces li:hover {
+    background-color: #F4F8FE;
+    color: #4F86D8!important;
+}
+.cuadro_enlaces a {
+    text-decoration: none;
+    color: #4F86D8;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.cuadro_enlaces a:hover {
+    color: #4F86D8!important;
+    cursor: pointer;
+}
+.cuadro_buscador_loc {
+    font-size: .70em;
+    color: #4F86D8;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+.cuadro_buscador_loc li {
+    background-image: none;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    background-color: #FFF;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    line-height: 18px;
+    border-bottom: 0;
+    vertical-align: middle;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    cursor: pointer;
+    height: 22px;
+}
+.cuadro_titulo {
+    padding-left: 5px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.cuadro_titulo h2 {
+    font-size: .70em;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.cuadro_simple {
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.texto_pie {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F86D8;
+    float: right;
+    width: 814px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.texto_copy {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F86D8;
+    background-repeat: no-repeat;
+    float: right;
+    width: 814px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.contenedor_pie {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F86D8;
+    float: right;
+    width: 100%;
+    font-size: .55em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 2px;
+}
+.texto_pie ul {
+    margin: 0;
+    padding: 0;
+}
+.texto_pie li {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    list-style-type: none;
+    display: inline;
+}
+.texto_pie a:link {
+    color: #4F86D8;
+}
+.texto_pie a:link:hover {
+    color: #757575;
+}
+.texto_pie a:visited {
+    color: #757575;
+}
+.texto_pie a:visited:hover {
+    color: #000;
+}
+.pie_home {
+    font-size: .55em;
+    font-weight: normal;
+    color: #4F86D8;
+    text-align: center;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-decoration: none;
+    background-repeat: repeat;
+    height: 19px;
+    width: 164px;
+}
+.pie_home a {
+    padding-left: 2px;
+}
+.pie_home ul {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+}
+.pie_home li {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline;
+}
+.rastro {
+    font-size: .55em;
+    color: #000;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    float: left;
+}
+.rastro span {
+    padding-right: 3px;
+}
+.rastro a {
+    color: #000;
+    text-decoration: none;
+    padding-right: 3px;
+}
+.rastro a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.rastro_enlaces_corto {
+    float: left;
+    width: 526px;
+    padding-left: 3px;
+}
+.rastro_enlaces {
+    float: left;
+    width: 556px;
+    padding-left: 3px;
+}
+.rastro_enlaces_largo {
+    float: left;
+    width: 690px;
+    padding-left: 3px;
+}
+.rastro_enlaces_gcd {
+    float: left;
+    width: 640px;
+    padding-left: 3px;
+}
+.rastro_enlaces_loc {
+    float: left;
+    width: 610px;
+    padding-left: 3px;
+}
+.portada_avisos {
+    float: left;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    width: 100%;
+}
+.pdtop10 {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+}
+.contenedorcentralmapaweb a {
+    text-decoration: none;
+    color: #4F86D8;
+    padding: 0;
+    margin: 0;
+}
+.lincks {
+    float: left;
+    margin-left: 0;
+    margin-bottom: 8px;
+    color: #345A8E;
+    margin-top: 5px;
+}
+.lincks p {
+    color: #000;
+    margin-bottom: 0;
+}
+.lincks ul {
+    padding-top: 5px;
+    margin-left: 25px;
+    vertical-align: top;
+}
+.lincks li {
+    list-style-type: none;
+    text-decoration: none;
+    background-image: url(http://www.aemet.es/imagenes/gif/punto_rojo.gif);
+    background-repeat: no-repeat;
+    background-position: 2px 7px;
+    font-style: normal;
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.lincks a:link {
+    color: #345A8E;
+}
+.lincks a:link:hover {
+    color: #757575;
+}
+.lincks a:visited {
+    color: #757575;
+}
+.lincks a:visited:hover {
+    color: #000;
+}
+.lincks h3 {
+    font-size: 1.00em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+.lincks_img {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+.font_bold {
+    font-weight: bold;
+}
+
+.contenedor_iconos {
+    float: left;
+    padding-bottom: 15px;
+}
+.icono_ayuda {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 169px;
+    height: 58px;
+}
+.texto_rojo {
+    color: #F00;
+}
+.margen {
+    padding-left: 10px;
+}
+.paginacion ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.borde_rb_left_2 {
+    border-left: solid 1px #95B6E8;
+    border-bottom: solid 1px #95B6E8;
+    text-align: center;
+}
+.margintop8px {
+    margin-top: 8px;
+}
+.margintopbottom10px {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.marginbottom20px {
+    margin-bottom: 20px;
+}
+.marginbottom5px {
+    margin-bottom: 5px;
+}
+.icono_aviso_tabla {
+    margin-top: 6px;
+}
+.form_textbox_localidades {
+    font-size: 1.00em;
+    width: 245px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.oculta_enlaces {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.cuadro_prediccion {
+    font-size: .70em;
+    font-weight: bold;
+    color: #4F86D8;
+}
+.subrayado {
+    text-decoration: underline;
+}
+.centrado {
+    text-align: center;
+}
+.justificado {
+    text-align: justify;
+}
+.margintop7px {
+    margin-top: 7px;
+}
+.estilo_cursor_ayuda {
+    cursor: help;
+}
+.cabecera_transp {
+    width: 996px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+.fondo_cabecera {
+    background-color: #4F86D9;
+    height: 80px;
+}
+.cabecera_logo {
+    margin-top: 10px;
+    float: right;
+}
+.cabecera_titulo {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: #FFF;
+    float: left;
+}
+#tablewrapper {
+    width: 98%;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.texto_centrado {
+    text-align: center;
+    font-size: .70em;
+}
+#tableheader {
+    height: 55px;
+    width: 98%;
+}
+#tableheader select {
+    float: left;
+    font-size: .90em;
+    width: 140px;
+    padding: 2px 4px 4px;
+}
+#tableheader input {
+    float: left;
+    font-size: .90em;
+    width: 225px;
+    padding: 2px 4px 4px;
+    margin-left: 4px;
+}
+.details {
+    float: right;
+    padding-top: 12px;
+}
+.details div {
+    float: left;
+    margin-left: 15px;
+    font-size: .90em;
+}
+.tinytable {
+    width: 100%;
+    border-left: 1px solid #c6d5e1;
+    border-top: 1px solid #c6d5e1;
+    border-bottom: none;
+}
+.tinytable th {
+    background-color: #4F86D9;
+    text-align: left;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-right: none;
+}
+.tinytable th h3 {
+    font-size: .70em;
+    padding: 6px 8px 8px;
+}
+.tinytable td {
+    padding: 4px 6px 6px;
+    border-bottom: 1px solid #c6d5e1;
+    border-right: 1px solid #c6d5e1;
+    font-size: .70em;
+}
+.tinytable .head h3 {
+    background: url(http://www.aemet.es/imagenes/admin/sort.gif) 7px center no-repeat;
+    cursor: pointer;
+    padding-left: 18px;
+}
+.tinytable .desc h3 {
+    background: url(http://www.aemet.es/imagenes/admin/desc.gif) 7px center no-repeat;
+    cursor: pointer;
+    padding-left: 18px;
+}
+.tinytable .asc h3 {
+    background: url(http://www.aemet.es/imagenes/admin/asc.gif) 7px center no-repeat;
+    cursor: pointer;
+    padding-left: 18px;
+}
+.tinytable .head:hover,
+.tinytable .desc:hover,
+.tinytable .asc:hover {
+    color: #FFF;
+}
+.tinytable .evenrow td {
+    background: #FFF;
+}
+.tinytable .oddrow td {
+    background: #ecf2f6;
+}
+.tinytable td.evenselected {
+    background: #ecf2f6;
+}
+.tinytable td.oddselected {
+    background: #dce6ee;
+}
+.tinytable tfoot {
+    background: #FFF;
+    font-weight: bold;
+}
+.tinytable tfoot td {
+    padding: 6px 8px 8px;
+}
+#tablefooter {
+    height: 15px;
+    margin-top: 20px;
+    font-size: .90em;
+}
+#tablenav {
+    float: left;
+}
+#tablenav img {
+    cursor: pointer;
+}
+#tablenav div {
+    float: left;
+    margin-right: 15px;
+}
+#tablelocation {
+    float: right;
+    font-size: .90em;
+}
+#tablelocation select {
+    margin-right: 3px;
+}
+#tablelocation div {
+    float: left;
+    margin-left: 15px;
+}
+.page {
+    margin-top: 2px;
+    font-style: italic;
+}
+#selectedrow td {
+    background: #c6d5e1;
+}
+.ocultar {
+    visibility: hidden;
+}
+.cont_leyenda_loc {
+    padding-top: 10px;
+}
+.margintop10px {
+    margin-top: 10px;
+}
+.margintop-18pxleft70px {
+    margin-top: -18px;
+    margin-left: 70px;
+}
+.lista_sin_estilo {
+    list-style-type: none;
+}
+.margintop40px {
+    margin-top: 40px;
+}
+.fontsize07em {
+    font-size: .7em;
+}
+.fontsize09em {
+    font-size: .9em;
+}
+.fontsize11em {
+    font-size: 1.1em;
+}
+.height24px {
+    height: 24px;
+}
+.height160px {
+    height: 160px;
+}
+.margintop20px {
+    margin-top: 20px;
+}
+.border1px {
+    border: 1px;
+}
+.nodisplay {
+    display: none;
+}
+.flotvaluelabels {
+    width: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #194C99;
+}
+.marginbottom10px {
+    margin-bottom: 10px;
+}
+.marginbottom3px {
+    margin-bottom: 3px;
+}
+.vertical_align_middle {
+    vertical-align: middle;
+    width: 30px;
+}
+.marginleft1px {
+    margin-left: 1px;
+}
+.marginright2px {
+    margin-right: 2px;
+}
+.cabecera_error {
+    background-image: url(http://www.aemet.es/imagenes/jpg/cabecera_error.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 346px;
+}
+.separador_celda_azul {
+    background-image: url(http://www.aemet.es/imagenes/gif/linea_puntos_2x1.gif);
+    background-repeat: repeat-x;
+    background-position: 0 7px;
+    height: 6px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.separador_celda_blanco {
+    background-image: url(http://www.aemet.es/imagenes/gif/linea_puntos_2x1_blanca.gif);
+    background-repeat: repeat-x;
+    background-position: 0 7px;
+    height: 6px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.enlace_mapa_prox {
+    color: #6F6F6F;
+}
+.enlace_mapa_prox:visited {
+    color: #6F6F6F;
+}
+.fondo_estacion:hover,
+.fondo_estacion:focus {
+    font-size: 1.25em;
+    border: 2px solid #4F86D9;
+    background-color: #FFF;
+    padding: 1px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    opacity: .90;
+    outline: 0 solid #FFF;
+}
+.fondo_estacion_prox:hover,
+.fondo_estacion_prox:focus {
+    font-size: 1.25em;
+    border: 2px solid #6F6F6F;
+    background-color: #DFDFDF;
+    padding: 1px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    opacity: .90;
+    outline: 0 solid #FFF;
+}
+.fondo_estacion {
+    position: absolute;
+    font-size: 1.00em;
+    text-align: left;
+}
+.fondo_estacion_prox {
+    position: absolute;
+    font-size: .80em;
+    text-align: left;
+}
+.lista_mapa {
+    position: relative;
+    margin-top: 0;
+    height: 332px;
+    width: 500px;
+}
+.contenedor_mapa {
+    height: 332px;
+    width: 500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.leyenda {
+    height: 8px;
+    width: 15px;
+    display: inline;
+    margin-right: 4px;
+}
+.texto_leyenda {
+    height: 8px;
+    display: inline;
+    margin-right: 4px;
+}
+.leyenda_mapa_grafica {
+    font-size: .80em;
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    list-style-type: none;
+    width: 500px;
+}
+.leyenda_mapa_grafica li {
+    display: inline;
+}
+.enlace_link_ocultos {
+    position: absolute;
+    left: -999999px;
+}
+.enlace_web {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.enlace_web a:visited {
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.width15px {
+    width: 15px;
+}
+.fondo_blanco {
+    background-color: #FFF;
+}
+.form_submit_grande {
+    font-size: .90em;
+    color: #4F86D8;
+    width: 83px;
+    height: 18px;
+    border: 0;
+    background-image: url(http://www.aemet.es/imagenes/gif/boton_grande.gif);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 0;
+    line-height: 18px;
+    padding-bottom: 4px;
+}
+.fix_png {
+    behavior: url(/misc/iepngfix.htc);
+}
+.height18px {
+    height: 18px;
+}
+.width63px {
+    width: 88px;
+}
+.width55px {
+    width: 77.5px;
+}
+.marginleft30px {
+    margin-left: 30px;
+}
+.estacion_mapa {
+    width: 24px;
+    height: 24px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_radar.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapa:hover,
+.estacion_mapa:focus {
+    background-image: url(http://www.aemet.es/imagenes/png/punto_radar_sel.png);
+    outline: 0 solid #FFF;
+}
+.estacion_mapa_peq {
+    width: 10px;
+    height: 10px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_radar.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapa_peq:hover,
+.estacion_mapa_peq:focus {
+    background-image: url(http://www.aemet.es/imagenes/png/punto_radar_sel.png);
+    outline: 0 solid #FFF;
+}
+.estacion_mapa_desa {
+    width: 24px;
+    height: 24px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_radar_activa.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.contenedor_mapa_ul_dato {
+    height: 399px;
+    width: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor_central_ul_dato {
+    position: relative;
+    float: left;
+    text-align: center;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    width: 777px;
+    margin: 0 auto;
+}
+.lista_mapa_ul_dato {
+    position: relative;
+    margin-top: 0;
+    height: 399px;
+    width: 600px;
+}
+.estacion_mapa_ul_dato {
+    width: 10px;
+    height: 10px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_estacion_udat.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapatemp_ul_dato {
+    width: 10px;
+    height: 10px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_estacion_udat.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapa_ul_dato:hover,
+.estacion_mapa_ul_dato:focus {
+    background-image: url(http://www.aemet.es/imagenes/png/punto_estacion_sel_udat.png);
+    outline: 0 solid #FFF;
+}
+.estacion_mapatempprox_ul_dato {
+    width: 10px;
+    height: 10px;
+    background-image: url(http://www.aemet.es/imagenes/png/punto_estacion_udat.png);
+    background-position: center center;
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapa_ozono {
+    width: 18px;
+    height: 30px;
+    background-image: url(http://www.aemet.es/imagenes/png/globo_ozono.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    behavior: url(/misc/iepngfix.htc);
+}
+.estacion_mapa_ozono:hover,
+.estacion_mapa_ozono:focus {
+    width: 21px;
+    height: 35px;
+    background-image: url(http://www.aemet.es/imagenes/png/globo_ozono_sel2.png);
+    outline: 0 solid #FFF;
+}
+.black_font {
+    color: black;
+}
+.black_font:visited {
+    color: black;
+}
+.fondo_estacion_uvi:hover,
+.fondo_estacion_uvi:focus {
+    z-index: 10;
+    font-size: 1.25em;
+    border-width: 2px;
+    outline: 0 solid #FFF;
+}
+.fondo_estacion_uvi {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.00em;
+    text-align: left;
+    border: 2px solid #6F6F6F;
+    background-color: #FFF;
+    padding: 1px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.importante {
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: none repeat scroll 0 0 #F4F8FE;
+    border: 1px solid #4F86D9;
+    color: #000;
+    margin: 1.5% 0;
+    padding: 15px 5px 5px;
+    width: 757px!important;
+}
+.imagen_warning {
+    background-image: url(http://www.aemet.es/imagenes/gif/warning.gif)!important;
+    padding-left: 22px!important;
+    width: 520px!important;
+}
+.enlace_cnp {
+    color: #BE3724!important;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif)!important;
+    font-weight: bold!important;
+}
+.sin_borde {
+    border: 0!important;
+}
+.enlace_conferencia {
+    margin-top: 4px!important;
+}
+.enlace_conferencia a:link {
+    padding-left: 20px!important;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul_oscuro.gif)!important;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-style: normal;
+    text-decoration: none;
+    padding-right: 7px;
+}
+.enlace_conferencia a:link:hover {
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif)!important;
+    padding-left: 20px!important;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-style: normal;
+    text-decoration: none;
+}
+.enlace_conferencia a:visited {
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif)!important;
+    padding-left: 20px!important;
+}
+.enlace_conferencia a:visited:hover {
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif)!important;
+    padding-left: 20px!important;
+}
+.verticalmiddle {
+    vertical-align: middle;
+}
+.simpleColorDisplay {
+    float: left;
+}
+.paddingbottom40px {
+    padding-bottom: 40px;
+}
+.margintop5px {
+    margin-top: 5px;
+}
+.height100px {
+    height: 100px;
+}
+.contenedor_popup {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+}
+.popup_estacion_datos {
+    left: 22px;
+    position: absolute;
+    border: 2px solid #4F86D9;
+    background-color: #FFF;
+    padding: 1px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: .70em;
+    outline: 0 solid #FFF;
+}
+.indicador {
+    position: absolute;
+    background-image: url(http://www.aemet.es/imagenes/gif/indicador.gif);
+    vertical-align: middle;
+    height: 32px;
+    width: 24px;
+    z-index: 5;
+}
+.fondo_estacion_datos:hover,
+.fondo_estacion_datos:focus {
+    border: 2px solid #4F86D9;
+    background-color: #FFF;
+    padding: 1px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    opacity: .90;
+    outline: 0 solid #FFF;
+}
+.fondo_estacion_datos {
+    position: absolute;
+    text-align: left;
+}
+.fondo_azul_4F86D9 {
+    background-color: #4F86D9;
+}
+.fondo_azul_E9F1FD {
+    background-color: #E9F1FD;
+}
+.fondo_azul_D5E7FF {
+    background-color: #D5E7FF;
+}
+.fondo_azul_95B6E9 {
+    background-color: #95B6E9;
+}
+.white_color {
+    color: #FFF;
+}
+.font_normal {
+    font-weight: normal;
+}
+.redondear {
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+}
+.shadow {
+    -moz-border-radius-topright: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-right: 2px solid #E0E7EF;
+    border-bottom: 2px solid #E0E7EF;
+    color: inherit;
+    float: left;
+    position: relative;
+}
+.margen_negativo_izq_1px {
+    margin-left: -1px;
+}
+.alinear_texto_izq {
+    text-align: left;
+}
+.ancho_desplegable_indice {
+    width: 614px;
+    margin: 0 auto;
+}
+.height500px {
+    height: 500px;
+}
+.height510px {
+    height: 510px;
+}
+.height315px {
+    height: 315px;
+}
+.height348px {
+    height: 348px;
+}
+.height475px {
+    height: 475px;
+}
+.contenedor_animacion {
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+}
+.inline_block {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+.inline_block2 {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    margin-top: 10px;
+}
+.contorno_borde_prec {
+    border: 1px solid #779FD6;
+    margin: 0 auto;
+    padding: 0;
+    width: 573px;
+}
+.height530px {
+    height: 530px;
+}
+.width480px {
+    width: 480px;
+}
+.height488px {
+    height: 488px;
+}
+.width550px {
+    width: 550px;
+}
+.height270px {
+    height: 270px;
+}
+.width548px {
+    width: 548px;
+}
+.height548px {
+    height: 548px;
+}
+.width545px {
+    width: 545px;
+}
+.height528px {
+    height: 528px;
+}
+.width528px {
+    width: 528px;
+}
+.height480px {
+    height: 480px;
+}
+.width490px {
+    width: 490px;
+}
+.valign_bottom {
+    vertical-align: bottom;
+}
+.ancho_web {
+    width: 777px;
+}
+.alinear_texto_centro {
+    text-align: center;
+}
+.centrar_texto_azul {
+    text-align: center!important;
+    color: #4F86D8;
+    width: 80%;
+}
+.contenedor_avisos {
+    height: 334px;
+    margin: 0 auto;
+    width: 540px;
+}
+.paddingright10px {
+    padding-right: 10px;
+}
+.clear_none {
+    clear: none!important;
+}
+.redondear_esquinas {
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+}
+.imagen_pred_portada {
+    width: 437px;
+    -ms-interpolation-mode: bicubic;
+}
+.paddingbottom15px {
+    padding-bottom: 15px;
+}
+.height180px {
+    height: 180px;
+}
+.height35px {
+    height: 35px!important;
+}
+.paddingtop3px {
+    padding-top: 3px;
+}
+.width110px {
+    width: 110px;
+}
+.paddingleft8px {
+    padding-left: 8px;
+}
+.paddingleft15px {
+    padding-left: 15px;
+}
+.marginbottom0px {
+    margin-bottom: 0!important;
+}
+.margintop0px {
+    margin-top: 0!important;
+}
+.paddingright30px {
+    padding-right: 30px;
+}
+.paddingright80px {
+    padding-right: 80px;
+}
+.paddingbottom2px {
+    padding-bottom: 2px;
+}
+.paddingright0px {
+    padding-right: 0!important;
+}
+.contenedor_radar_portada {
+    width: 229px;
+    margin: 0 auto;
+}
+.lista_avisos_portada {
+    list-style: none;
+    width: 120px!important;
+}
+.contenedor_portada_avisos {
+    width: 172px;
+    height: 114.2px;
+}
+.lista_avisos_portada div {
+    width: 100px;
+    padding-left: 10px;
+    text-indent: 0;
+    height: 16px;
+}
+.nivel_aviso_max_portada {
+    background-image: none!important;
+    padding-left: 10px!important;
+    width: 100px!important;
+}
+.paddingtop10px {
+    padding-top: 10px;
+}
+.ancho_tabla_portada_avisos {
+    width: 110px!important;
+}
+.texto_fecha_img_pred {
+    background-color: #FFF;
+    height: 25px;
+    z-index: 5;
+    position: relative;
+}
+.contenedor_img_pred_portada {
+    position: relative;
+    margin-top: -30px;
+}
+.height113px {
+    height: 113px;
+}
+.lista_avisos_portada div:hover {
+    background-color: #F4F8FE;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+}
+.paddingright5px {
+    padding-right: 5px;
+}
+.paddingright20px {
+    padding-right: 20px;
+}
+.iconos_menu_portada {
+    width: 22px;
+    float: right;
+    position: relative;
+    top: -4px;
+}
+.tam_texto_070 {
+    font-size: .70em;
+}
+.texto_verde {
+    color: #008000;
+}
+.texto_marron {
+    color: #884513;
+}
+.alinear_texto_dcha {
+    text-align: right;
+}
+.width_temp_portada {
+    width: 55px;
+}
+.fondo_celda_azul_claro {
+    background-color: #F4F8FE;
+}
+.borde_rlb_th_viento {
+    border-right: solid 1px #95B6E8;
+    border-left: solid 1px #95B6E8;
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+.ocultar_filas {
+    display: none;
+}
+.width60px {
+    width: 60px;
+}
+.celda_temp_widget {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.padding_top_bottom_5px {
+    padding: 5px 0;
+}
+.marginleft5px {
+    margin-left: 5px;
+}
+.redondear_widget {
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+.fondo_transparente {
+    background-color: transparent!important;
+}
+.boton_cerrar {
+    background-image: url("http://www.aemet.es/imagenes/admin/jquery/ui-icons_2e83ff_256x240.png");
+    background-position: -82px -130px;
+    background-repeat: no-repeat;
+    background-color: #F4F8FE;
+    border: solid 1px #95B6E8;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+.boton_cerrar:hover {
+    background-image: url("http://www.aemet.es/imagenes/admin/jquery/ui-icons_cd0a0a_256x240.png");
+    border: solid 1px red;
+}
+.padding_popup {
+    padding: 10px!important;
+}
+.no_wrap {
+    white-space: nowrap;
+}
+.table_widget {
+    padding: 2px;
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid #4F86D9;
+}
+.table_widget_vertical {
+    position: absolute;
+    z-index: -2;
+    top: -1500px;
+}
+.fieldset_widget_datos {
+    width: 185px;
+    height: 270px;
+}
+.fieldset_widget_municipio_idioma {
+    width: 350px;
+    height: 270px;
+}
+.fieldset_widget_estilos {
+    width: 210px;
+    height: 330px;
+}
+.fieldset_widget_copia {
+    width: 310px;
+    height: 330px;
+}
+.legend_fieldset {
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #4F86D9;
+}
+.redondeado_esq_superior {
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}
+.width500px_tabla_prov {
+    width: 500px!important;
+}
+.cursor_pointer {
+    cursor: pointer;
+}
+.div_fenomeno {
+    position: relative;
+    height: 18px;
+}
+.borde_fenomeno {
+    border-width: 3px;
+    border-style: solid;
+}
+.color_azul {
+    color: #4F86D9;
+}
+.color_gris {
+    color: #869CBA;
+}
+.marginleft3px {
+    margin-left: 3px;
+}
+.div_fen_todos {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+}
+.height47px {
+    height: 47px;
+}
+.texto_fen_todos {
+    position: absolute;
+    top: 5px;
+    width: 60px;
+}
+.enlace_observador {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    width: 90px;
+}
+.enlace_observador a:link {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #4F86D8;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_azul.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.enlace_observador a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #757575;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_gris.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.enlace_observador a:link:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #B00640;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.enlace_observador a:visited:hover {
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #000;
+    background-image: url(http://www.aemet.es/imagenes/gif/flechader_negro.gif);
+    background-repeat: no-repeat;
+    background-position: right 4px;
+}
+.enlace_observador ul {
+    padding-bottom: 5px;
+    list-style-type: none;
+    width: 90px;
+}
+.enlace_observador ul li {
+    background-image: url(http://www.aemet.es/imagenes/gif/punto_rojo_9x13.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 5px;
+    text-indent: 0;
+    padding-left: 10px;
+    width: 90px;
+}
+.paddingleft30px {
+    padding-left: 30px;
+}
+.margen_negativo_izq_20px {
+    margin-left: -20px!important;
+}
+#contenedor_tabla {
+    padding-top: 1px;
+    margin-bottom: 10px;
+    width: 777px;
+}
+.height85px {
+    height: 85px;
+}
+.height50px {
+    height: 50px;
+}
+.cont_h3_th_inf {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.cont_h3_th_sup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.tabla_dinamica {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    border: 0;
+    width: 777px;
+    padding: 0;
+    vertical-align: top;
+    margin-bottom: 0;
+    margin-top: 0;
+    empty-cells: show;
+    font-size: 1.00em;
+}
+.tabla_dinamica th {
+    background-color: #4F86D9;
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: top;
+    border-right: solid 1px #4F86D9;
+    border-bottom: solid 1px #4F86D9;
+    border-top: solid 1px #4F86D9;
+    height: 100%;
+}
+.tabla_dinamica h3 {
