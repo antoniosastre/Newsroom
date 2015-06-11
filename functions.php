@@ -196,7 +196,7 @@ function videosInInbox(){
 
 }
 
-function printQueuedNewsTable($res){
+function printQueuedNewsTable($res, $delay){
 
 	include 'config.php';
 
@@ -212,15 +212,17 @@ function printQueuedNewsTable($res){
 		echo "<tr>";
 			echo "<td style=\"width: 230px;\" class=\"lead\">".$noticia['header']."</td>"."<td>".$noticia['prompter']."</td>"."<td>";
 			
-			echo "<video id=\"video-".$noticia['position']."\" width=\"256\" height=\"144\" controls>";
-			echo "<source src=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($noticia['related_media'])."\" />";
-			echo "</video>";
+			if(!empty($noticia['related_media'])) echo "<video id=\"video-".$noticia['position']."\" width=\"256\" height=\"144\" controls>";
+			if(!empty($noticia['related_media'])) echo "<source src=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($noticia['related_media'])."\" />";
+			if(!empty($noticia['related_media'])) echo "</video>";
 			echo "</td>"."<td style=\"width: 80px;\">";
 				
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=edit&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Editar</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=insert&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-log-in\" aria-hidden=\"true\"></span> Meter</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Mañana</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=delete&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Borrar</a>";
+			if($delay == 0 || $delay == 1 || $delay == -1)	echo "<a href=\"news-engine.php?r=".$return_page."&a=edit&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Editar</a><br>";
+			if($delay == 0)	echo "<a href=\"news-engine.php?r=".$return_page."&a=insert&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-log-in\" aria-hidden=\"true\"></span> Meter</a><br>";
+			if($delay == 0)	echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Mañana</a><br>";
+			if($delay == -1) echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Hoy</a><br>";
+			if($delay == 1)	echo "<a href=\"news-engine.php?r=".$return_page."&a=yesterday&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Ayer</a><br>";
+			if($delay == 0 || $delay == 1 || $delay == -1)	echo "<a href=\"news-engine.php?r=".$return_page."&a=delete&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Borrar</a>";
 
 			echo "</td>";
 		echo "</tr>";
@@ -230,7 +232,7 @@ function printQueuedNewsTable($res){
 
 }
 
-function printAcceptedNewsTable($res){
+function printAcceptedNewsTable($res, $delay){
 
 	include 'config.php';
 	require_once 'db.php';
@@ -245,20 +247,21 @@ function printAcceptedNewsTable($res){
 	while($noticia = mysqli_fetch_array($res)){
 
 		echo "<tr>";
-			echo "<td class=\"text-center\" style=\"width: 30px;\"><strong>".$noticia['position']."</strong></td>"."<td style=\"width: 230px;\" class=\"lead\">".$noticia['header']."</td>"."<td>".$noticia['prompter']."</td>"."<td>";
+			echo "<td class=\"text-center\" style=\"width: 50px;\"><h3>".$noticia['position']."</h3></td>"."<td style=\"width: 230px;\" class=\"lead\">".$noticia['header']."</td>"."<td>".$noticia['prompter']."</td>"."<td>";
 			
-			echo "<video id=\"video-".$noticia['position']."\" width=\"256\" height=\"144\" controls>";
-			echo "<source src=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($noticia['related_media'])."\" />";
-			echo "</video>";
+			if(!empty($noticia['related_media'])) echo "<video id=\"video-".$noticia['position']."\" width=\"256\" height=\"144\" controls>";
+			if(!empty($noticia['related_media'])) echo "<source src=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($noticia['related_media'])."\" />";
+			if(!empty($noticia['related_media'])) echo "</video>";
 
 			echo "</td>"."<td style=\"width: 80px;\">";
 
-				if($noticia['position'] != 1) echo "<a href=\"news-engine.php?r=".$return_page."&a=up&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-collapse-up\" aria-hidden=\"true\"></span> Subir</a><br>";
-				if($noticia['position'] != realLastPositionToday()) echo "<a href=\"news-engine.php?r=".$return_page."&a=down&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-collapse-down\" aria-hidden=\"true\"></span> Bajar</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=edit&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Editar</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=extract&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-log-out\" aria-hidden=\"true\"></span> Sacar</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Mañana</a><br>";
-				echo "<a href=\"news-engine.php?r=".$return_page."&a=delete&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Borrar</a>";
+				if($delay == 0) if($noticia['position'] != 1) echo "<a href=\"news-engine.php?r=".$return_page."&a=up&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-collapse-up\" aria-hidden=\"true\"></span> Subir</a><br>";
+				if($delay == 0) if($noticia['position'] != realLastPositionToday()) echo "<a href=\"news-engine.php?r=".$return_page."&a=down&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-collapse-down\" aria-hidden=\"true\"></span> Bajar</a><br>";
+				if($delay == 0 || $delay == 1 || $delay == -1) echo "<a href=\"news-engine.php?r=".$return_page."&a=edit&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Editar</a><br>";
+				if($delay == 0) echo "<a href=\"news-engine.php?r=".$return_page."&a=extract&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-log-out\" aria-hidden=\"true\"></span> Sacar</a><br>";
+				if($delay == 0) echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Mañana</a><br>";
+				if($delay == -1) echo "<a href=\"news-engine.php?r=".$return_page."&a=tomorrow&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-share\" aria-hidden=\"true\"></span> Hoy</a><br>";
+				if($delay == 0 || $delay == 1 || $delay == -1) echo "<a href=\"news-engine.php?r=".$return_page."&a=delete&n=".$noticia['id']."\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Borrar</a>";
 
 			echo "</td>";
 		echo "</tr>";
@@ -280,7 +283,7 @@ function printSingleNew($newsId){
 	$noticia = getNewsById($newsId);
 
 		echo "<tr>";
-			echo "<td class=\"text-center\" style=\"width: 30px;\"><strong>".$noticia['position']."</strong></td>"."<td style=\"width: 230px;\" class=\"lead\">".$noticia['header']."</td>"."<td>".$noticia['prompter']."</td>"."<td>";
+			echo "<td class=\"text-center\" style=\"width: 50px;\"><h3>".$noticia['position']."</h3></td>"."<td style=\"width: 230px;\" class=\"lead\">".$noticia['header']."</td>"."<td>".$noticia['prompter']."</td>"."<td>";
 			
 			echo "<video id=\"video-".$noticia['position']."\" width=\"256\" height=\"144\" controls>";
 			echo "<source src=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($noticia['related_media'])."\" />";
@@ -289,27 +292,6 @@ function printSingleNew($newsId){
 		echo "</tr>";
 
 	echo "</tbody></table>";
-
-}
-
-function prompterFilesLinks(){
-
-$files = scandir("prompterfiles");
-
-echo "<table class=\"table table-striped table-bordered table-condensed\">";
-echo "<thead><tr>";
-echo "<th>Archivos</th>";
-echo "</tr></thead><tbody>";
-
-	for ($i=0; $i < sizeof($files); $i++) {
-
-		if($files[$i] != "." && $files[$i] != ".." && $files[$i] != "@eaDir" && $files[$i] != ".gitignore"){
-		echo "<tr><td><a href=\"prompterfiles/".$files[$i]."\" download>".$files[$i]."</a></td></tr>\n";
-	}
-	}
-
-	echo "</tbody></table>";
-
 
 }
 

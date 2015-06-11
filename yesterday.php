@@ -32,13 +32,19 @@ if(!isValidCookie("newsroom")){
 		
 <div class="container">
 
-<h1>Hoy - <?php echo date("d/m/Y"); ?></h1>
+<h1>Ayer - <?php 
+
+$date = new DateTime(date("Y-m-d"));
+$date->modify('-1 day');
+echo $date->format('d/m/Y');
+
+ ?></h1>
 
 <h3>Escaleta</h3>
 
 <?
 
-	tableOfNews(1);
+	tableOfNews(1,-1);
 
 ?>
 <br>
@@ -46,7 +52,7 @@ if(!isValidCookie("newsroom")){
 
 <?
 
-	tableOfNews(0);	
+	tableOfNews(0,-1);	
 
 ?>
 

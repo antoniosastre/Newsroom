@@ -34,7 +34,6 @@
                   </div>
                 </form>
             </li>
-            
             <li><form action="person.php" method="GET" class="navbar-form navbar-left">
                   <div class="form-group">
                     <input type="text" class="form-control" name="q" placeholder="Persona">
@@ -71,17 +70,56 @@
 
         </a></li>
 
-        <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "today.php")) echo "class=\"active\""; ?>><a href="today.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Escaleta 
-        <?php 
+        <li class="dropdown<?php if (strpos($_SERVER['SCRIPT_NAME'], "today.php") || strpos($_SERVER['SCRIPT_NAME'], "tomorrow.php") || strpos($_SERVER['SCRIPT_NAME'], "yesterday.php")) echo " active"; ?>">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Escaleta <?php 
+        require_once 'db.php'; 
+
+        if(newsInQueueToday()>0){
+          echo "<span class=\"badge\">".newsInQueueToday()."</span>";
+        }
+        ?><span class="caret"></span></a>
+
+        	<ul class="dropdown-menu" role="menu">
+
+        
+        <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "yesterday.php")) echo "class=\"active\""; ?>><a href="yesterday.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Ayer <?php 
+        require_once 'db.php'; 
+
+        if(newsInQueueYesterday()>0){
+          echo "<span class=\"badge\">".newsInQueueYesterday()."</span>";
+        }
+        ?>
+     
+        </a></li>
+
+
+        <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "today.php")) echo "class=\"active\""; ?>><a href="today.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Hoy <?php 
         require_once 'db.php'; 
 
         if(newsInQueueToday()>0){
           echo "<span class=\"badge\">".newsInQueueToday()."</span>";
         }
         ?>
+     
         </a></li>
 
-        <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "news-editor.php")) echo "class=\"active\""; ?>><a href="news-editor.php?a=new"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Nueva Noticia</a></li>
+  
+  <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "tomorrow.php")) echo "class=\"active\""; ?>><a href="tomorrow.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Mañana <?php 
+        require_once 'db.php'; 
+
+        if(newsInQueueTomorrow()>0){
+          echo "<span class=\"badge\">".newsInQueueTomorrow()."</span>";
+        }
+        ?>
+     
+        </a></li>
+
+
+          </ul>
+
+        </li>
+
+        <li <?php if (strpos($_SERVER['SCRIPT_NAME'], "news-editor.php")) echo "class=\"active\""; ?>><a href="news-editor.php?a=new"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Nueva Línea</a></li>
 
       </ul>
       <form action="search.php" method="GET" class="navbar-form navbar-left" role="search">

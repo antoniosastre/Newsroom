@@ -48,5 +48,5 @@ if(isset($_POST['pass'])){
 
     </div>
 
-    </body>
+    <?php include 'footer.php' ?></body>
 </html>

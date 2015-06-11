@@ -107,25 +107,25 @@ function isValidCookie($cookie){
 
 }
 
-function tableOfNews($status, $date=0){
+function tableOfNews($status, $delay=0){
 
 	require_once 'functions.php';
 
 	global $conexion;
 
-	if($date==0){
+	if($delay==0){
 			$que = "SELECT * FROM news WHERE showdate=\"".date("Y-m-d")."\" AND status=\"".$status."\" ORDER BY position ASC";
 	}else{
-			$que = "SELECT * FROM news WHERE showdate=\"".$date."\" AND status=\"".$status."\" ORDER BY position ASC";	
+			$que = "SELECT * FROM news WHERE showdate=DATE_ADD('".date("Y-m-d")."', INTERVAL ".$delay." DAY) AND status=\"".$status."\" ORDER BY position ASC";	
 	}
 
 	$res = mysqli_query($conexion,$que);
 
-	if($status == 0){
-			printQueuedNewsTable($res);
-	}else if($status == 1){
-			printAcceptedNewsTable($res);	
-	}
+		if($status == 0){
+			printQueuedNewsTable($res, $delay);
+		}else if($status == 1){
+			printAcceptedNewsTable($res, $delay);	
+		}
 	
 }
 
@@ -212,6 +212,26 @@ function newsInQueueToday(){
 
 	global $conexion;
 	$que = "SELECT COUNT(*) AS total FROM news WHERE showdate='".date("Y-m-d")."' AND status='0'";
+	$res = mysqli_query($conexion,$que);
+
+	return mysqli_fetch_array($res)['total'];
+
+}
+
+function newsInQueueTomorrow(){
+
+	global $conexion;
+	$que = "SELECT COUNT(*) AS total FROM news WHERE showdate=DATE_ADD('".date("Y-m-d")."', INTERVAL 1 DAY) AND status='0'";
+	$res = mysqli_query($conexion,$que);
+
+	return mysqli_fetch_array($res)['total'];
+
+}
+
+function newsInQueueYesterday(){
+
+	global $conexion;
+	$que = "SELECT COUNT(*) AS total FROM news WHERE showdate=DATE_ADD('".date("Y-m-d")."', INTERVAL -1 DAY) AND status='0'";
 	$res = mysqli_query($conexion,$que);
 
 	return mysqli_fetch_array($res)['total'];
@@ -379,7 +399,7 @@ function videoFilesLinks(){
 	global $conexion;
 	include 'config.php';
 
-	$que = "SELECT position, related_media FROM news WHERE showdate='".date("Y-m-d")."' AND status='1' ORDER BY position ASC";
+	$que = "SELECT position, related_media, header FROM news WHERE showdate='".date("Y-m-d")."' AND status='1' ORDER BY position ASC";
 	$res = mysqli_query($conexion,$que);
 
 	echo "<table class=\"table table-striped table-bordered table-condensed\">";
@@ -392,7 +412,7 @@ function videoFilesLinks(){
 		$posi = $video['position'];
 		if($posi < 10) $posi = "0".$posi;
 
-		echo "<tr><td><a href=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($video['related_media'])."\" download=\"v-".$posi."-".date("Y-m-d")."\">"."v-".$posi."-".date("Y-m-d")."</a></td></tr>\n";
+		if(!empty($video['related_media'])) echo "<tr><td><a href=\"".$PRE_RUTA_A_VIDEOS.urlOfVideo($video['related_media'])."\" download=\"v-".$posi."-".date("Y-m-d")."-".str_replace(' ', '-', preg_replace("/[^A-Za-z0-9 ]/", '', $video['header']))."\">"."v-".$posi."-".date("Y-m-d")." -> ".$video['header']."</a></td></tr>\n";
 
 	}
 
@@ -731,7 +751,7 @@ function updateFilenameInDB($idinsertedmedia, $def_target_file){
 
 	global $conexion;
 	$que = "UPDATE video SET pathtofile=\"".$def_target_file."\" WHERE id=\"".$idinsertedmedia."\"";
-	$res = mysqli_query($conexion,$que);
+	mysqli_query($conexion,$que);
 	
 }
 
@@ -744,6 +764,120 @@ function urlOfVideo($id){
 	$linea = mysqli_fetch_array($res);
 	return $linea['pathtofile'];
 }
+
+function newsTotal(){
+
+	global $conexion;
+	$que = "SELECT COUNT(id) AS count FROM news";
+	$res = mysqli_query($conexion,$que);
+	return mysqli_fetch_array($res)['count'];
+
+}
+
+function videosTotal(){
+
+	global $conexion;
+	$que = "SELECT COUNT(id) AS count FROM video";
+	$res = mysqli_query($conexion,$que);
+	return mysqli_fetch_array($res)['count'];
+	
+}
+
+function prompterFilesLinks(){
+
+	global $conexion;
+	include 'config.php';
+
+	$que = "SELECT position, header FROM news WHERE showdate='".date("Y-m-d")."' AND status='1' ORDER BY position ASC";
+	$res = mysqli_query($conexion,$que);
+
+echo "<table class=\"table table-striped table-bordered table-condensed\">";
+echo "<thead><tr>";
+echo "<th>Archivos</th>";
+echo "</tr></thead><tbody>";
+
+/*
+	for ($i=0; $i < sizeof($files); $i++) {
+
+		if($files[$i] != "." && $files[$i] != ".." && $files[$i] != "@eaDir" && $files[$i] != ".gitignore"){
+		echo "<tr><td><a href=\"prompterfiles/".$files[$i]."\" download>".$files[$i]."</a></td></tr>\n";
+	}
+	}
+
+*/
+
+	while ($prompter = mysqli_fetch_array($res)) {
+
+		$posi = $video['position'];
+		if($posi < 10) $posi = "0".$posi;
+
+		$posi = $prompter['position'];
+		if($posi < 10) $posi = "0".$posi;
+
+		echo "<tr><td><a href=\"prompterfiles/p-".$posi."-".date("Y-m-d").".txt\" download=\"p-".$posi."-".date("Y-m-d")."-".str_replace(' ', '-', preg_replace("/[^A-Za-z0-9 ]/", '', $prompter['header'])).".txt\">p-".$posi."-".date("Y-m-d")." -> ".$prompter['header']."</a></td></tr>\n";
+
+	}
+
+
+	echo "</tbody></table>";
+
+}
+
+function peopleOfVideo($videoID){
+
+	global $conexion;
+
+	$que = "SELECT * FROM people INNER JOIN peopleinmedia ON people.id = peopleinmedia.person INNER JOIN video ON peopleinmedia.media = video.id WHERE video.id = '".$videoID."' ORDER BY name ASC";
+	$res = mysqli_query($conexion,$que);
+
+	while ($item = mysqli_fetch_array($res)){
+		if(!empty($item['name'])) echo "<a href=\"person.php?q=".$item['name']."\"><button type=\"button\" class=\"btn btn-default btn-xs\">".$item['name']."</button></a> ";
+	}
+
+}
+
+function placesOfVideo($videoID){
+
+	global $conexion;
+
+	$que = "SELECT * FROM places INNER JOIN placesinmedia ON places.id = placesinmedia.place INNER JOIN video ON placesinmedia.media = video.id WHERE video.id = '".$videoID."' ORDER BY name ASC";
+	$res = mysqli_query($conexion,$que);
+
+	while ($item = mysqli_fetch_array($res)){
+		if(!empty($item['name'])) echo "<a href=\"place.php?q=".$item['name']."\"><button type=\"button\" class=\"btn btn-default btn-xs\">".$item['name']."</button></a> ";
+	}
+	
+}
+
+function tagsOfVideo($videoID){
+
+	global $conexion;
+
+	$que = "SELECT * FROM tags INNER JOIN tagsinmedia ON tags.id = tagsinmedia.tag INNER JOIN video ON tagsinmedia.media = video.id WHERE video.id = '".$videoID."' ORDER BY name ASC";
+	$res = mysqli_query($conexion,$que);
+
+	while ($item = mysqli_fetch_array($res)){
+		if(!empty($item['name'])) echo "<a href=\"tag.php?q=".$item['name']."\"><button type=\"button\" class=\"btn btn-default btn-xs\">".$item['name']."</button></a> ";
+	}
+	
+}
+
+function moveNewsToTomorrow($newsId){
+
+	global $conexion;
+	$que = "UPDATE news SET showdate=DATE_ADD(showdate, INTERVAL 1 DAY), status='0', position='0' WHERE id=\"".$newsId."\"";
+	mysqli_query($conexion,$que);
+
+}
+
+function moveNewsToYesterday($newsId){
+
+	global $conexion;
+	$que = "UPDATE news SET showdate=DATE_ADD(showdate, INTERVAL -1 DAY), status='0', position='0' WHERE id=\"".$newsId."\"";
+	mysqli_query($conexion,$que);
+
+}
+
 
 
 ?>

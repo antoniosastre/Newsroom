@@ -71,7 +71,7 @@ if(!isValidCookie("newsroom")){
 
 		<div class="form-group">
 		<label for="videoSelector">Vídeo:</label>
-		<select name="video" id="videoSelector" class="form-control">
+		<select name="video" id="videoSelector" class="form-control" <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 		<?php 
 		require_once 'functions.php';
 		inboxFilesOptions(); ?>
@@ -83,7 +83,7 @@ if(!isValidCookie("newsroom")){
 
 		<div class="form-group">
 		<label for="recorded_when">Grabado el:</label>
-		<input type="date" name="recorded_when" id="recorded_when" class="form-control" value="<?php echo date('Y-m-d'); ?>" required>
+		<input type="date" name="recorded_when" id="recorded_when" class="form-control" value="<?php echo date('Y-m-d'); ?>" required <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 		</div>
 
 		</div>
@@ -91,25 +91,25 @@ if(!isValidCookie("newsroom")){
     
     <div class="form-group">
     <label for="title">Título:</label>
-	<input type"text" name="title" id="title" class="form-control" required>
+	<input type"text" name="title" id="title" maxlength="240" class="form-control" required <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 	</div>
 
 	<div class="form-group">
 	<label for="input_people">Personas:</label>
-	<input name="people" id="input_people">
+	<input name="people" id="<?php if(videosInInbox() != 0) echo "input_people"; ?>" class="form-control" <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 	</div>
 
 	<div class="form-group">
 	<label for="input_places">Lugares:</label>
-	<input name="places" id="input_places">
+	<input name="places" id="<?php if(videosInInbox() != 0) echo "input_places"; ?>" class="form-control" <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 	</div>
 
 	<div class="form-group">
 	<label for="input_tags">Etiquetas:</label>
-	<input name="tags" id="input_tags">
+	<input name="tags" id="<?php if(videosInInbox() != 0) echo "input_tags"; ?>" class="form-control" <?php if(videosInInbox() == 0) echo "disabled"; ?>>
 	</div>
-
-    <button type="submit" class="btn btn-default" name="submit">Procesar vídeo</button>
+	<br>
+    <button type="submit" class="btn btn-primary" name="submit" <?php if(videosInInbox() == 0) echo "disabled"; ?>>Procesar vídeo</button>
 
 </form>
 
@@ -118,7 +118,7 @@ if(!isValidCookie("newsroom")){
 </div>
 
 		
-	</body>
+	<?php include 'footer.php' ?></body>
 </html>
 
 <?

@@ -19,5 +19,5 @@
 
     </div> <!-- /container -->
 
-    </body>
+    <?php include 'footer.php' ?></body>
 </html>

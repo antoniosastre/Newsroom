@@ -32,21 +32,19 @@ if(!isValidCookie("newsroom")){
 		
 <div class="container">
 
-<h1>Hoy - <?php echo date("d/m/Y"); ?></h1>
+<h1>Mañana - <?php 
 
-<h3>Escaleta</h3>
+$date = new DateTime(date("Y-m-d"));
+$date->modify('+1 day');
+echo $date->format('d/m/Y');
 
-<?
+ ?></h1>
 
-	tableOfNews(1);
-
-?>
-<br>
 <h3>Cola de Noticias</h3>
 
 <?
 
-	tableOfNews(0);	
+	tableOfNews(0,1);	
 
 ?>
 

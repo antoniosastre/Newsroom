@@ -47,7 +47,7 @@ if(!isValidCookie("newsroom")){
 		
 <div class="container">
 
-<h3>Componer nueva noticia</h3>
+<h3>Componer nueva línea para la escaleta</h3>
 <br>
 
 <?php
@@ -59,11 +59,11 @@ if($_GET['a']=="new"){
 <form action="news-engine.php" method="post" enctype="multipart/form-data">
 
 <input type="hidden" name="a" value="new">
-<input type="hidden" name="r" value="index.php">
+<input type="hidden" name="r" value="today.php">
 <input type="hidden" name="n" value="new">
 
 <div class="form-group">
-    <label for="header">Títular</label>
+    <label for="header">Título</label>
 	<input type"text" name="header" id="header" class="form-control" required>
 </div>
 
@@ -107,7 +107,7 @@ if($_GET['a']=="new"){
 
 </div>
 
-</body>
+<?php include 'footer.php' ?></body>
 </html>
 
 

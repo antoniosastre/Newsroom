@@ -201,6 +201,22 @@ echo "</div>
 
 	}else if($_GET['a']=="tomorrow"){
 
+		moveNewsToTomorrow($_GET['n']);
+		trimNewsPositions();
+
+		echo "<html><head><meta http-equiv=\"refresh\" content=\"1;url=".$_GET['r']."\">
+        <script type=\"text/javascript\">
+            window.location.href = ".$_GET['r']."</script></head></html>";
+
+	}else if($_GET['a']=="yesterday"){
+
+		moveNewsToYesterday($_GET['n']);
+		trimNewsPositions();
+
+		echo "<html><head><meta http-equiv=\"refresh\" content=\"1;url=".$_GET['r']."\">
+        <script type=\"text/javascript\">
+            window.location.href = ".$_GET['r']."</script></head></html>";
+
 	}else if($_GET['a']=="up"){
 
 		decreaseInPosition($_GET['n']);

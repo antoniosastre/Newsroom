@@ -65,7 +65,7 @@ if(rename($inbox_dir.$_POST['video'], $target_file)){
 
 	$ThisFileInfo = $getID3->analyze($target_file);
 
-	$idinsertedmedia = insertVideoInfo($_POST['title'], $_POST['recorded_when'], userIdByUser(explode("-and-", $_COOKIE['newsroom'])[0]), $ThisFileInfo['playtime_seconds'], $target_file, $ThisFileInfo['filesize'], $ThisFileInfo['mime_type'], $ThisFileInfo['video']['resolution_x'], $ThisFileInfo['video']['resolution_y'], $ThisFileInfo['video']['frame_rate']);
+	$idinsertedmedia = insertVideoInfo(str_replace("\"", "'", $_POST['title']), $_POST['recorded_when'], userIdByUser(explode("-and-", $_COOKIE['newsroom'])[0]), $ThisFileInfo['playtime_seconds'], $target_file, $ThisFileInfo['filesize'], $ThisFileInfo['mime_type'], $ThisFileInfo['video']['resolution_x'], $ThisFileInfo['video']['resolution_y'], $ThisFileInfo['video']['frame_rate']);
 
 	if($idinsertedmedia != -1){
 
@@ -78,6 +78,8 @@ if(rename($inbox_dir.$_POST['video'], $target_file)){
 			processPeople($idinsertedmedia, $_POST['people']);
 			processPlaces($idinsertedmedia, $_POST['places']);
 			processTags($idinsertedmedia, $_POST['tags']);
+
+			echo "<br><h3 class=\"text-center\">Su vídeo ha sido insertado con el id:</h3><h1 class=\"text-center\" style=\"font-size:80px;\">".$idinsertedmedia."</h1";
 
 		}else{
 			echo "El archivo no ha podido ser renombrado a su nombre final.";

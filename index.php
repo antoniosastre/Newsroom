@@ -47,24 +47,37 @@ $hdd = round($hddmath,2);
 $hddrem = 100-$hdd;
 
 ?>
+<hr>
+<p class="text-center lead" style="font-size: 60px; position: relative; top: 10px;"><?php echo date("d / m / Y"); ?></p>
 
-<h3>Uso de disco</h3>
+<div class="row">
+
+	<div class="col-md-4">
+<hr>
+<h3 class="text-center">Uso de disco</h3>
 <div class="progress">
   <div class="progress-bar progress-bar-<?php echo progressBarWord($hddrem); ?> progress-bar-striped active" role="progressbar"
   aria-valuenow="<?php echo $hddused; ?>" aria-valuemin="0" aria-valuemax="<?php echo $hddtotal; ?>" style="width:<?php echo $hddrem; ?>%">
-    <div style="color: black;"><?php echo "Uso ".$hddrem."% - Libre ".bytesToSizeString($hddfree); ?></div>
+    <div style="color: black;"><?php echo "<strong>Uso ".$hddrem."% - Libre ".bytesToSizeString($hddfree)."</strong>"; ?></div>
   </div>
 </div>
+<hr>
 
-<br>
+<h3 class="text-center">Total de noticias</h3>
+<h2 class="text-center"><?php echo newsTotal(); ?></h2>
+<hr>
+<h3 class="text-center">Total de vídeos</h3>
+<h2 class="text-center"><?php echo videosTotal(); ?></h2>
+<hr>
+</div>
 
+<div class="col-md-8">
+<hr>
 <h3>Predicción Ceuta</h3>
 
 <script type="text/javascript" src="js/jquery.flot.js"></script>
 <script type="text/javascript" src="js/jquery.flot.valuelabels.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
-
-<div style="">
 
 <?php
 
@@ -83,12 +96,16 @@ $meteo = str_replace("<table", "<table class=\"table table-bordered table-conden
 echo $meteo;
 
 ?>
+<hr>
+</div>
+</div>
+
 <br><br><br>
 
     </div>
 
 </div>
-
+<?php include 'footer.php' ?>
 </body>
 </html>
 

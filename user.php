@@ -189,7 +189,7 @@ if(!empty($_GET['d'])){
 
 <br><br><br>
 		
-	</body>
+	<?php include 'footer.php' ?></body>
 </html>
 
 <?
